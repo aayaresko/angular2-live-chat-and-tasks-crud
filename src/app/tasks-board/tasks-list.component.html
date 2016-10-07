@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-md-12">
+        <p>
+            <a class="btn btn-primary" routerLink="create">New task</a>
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="list-group">
+            <div *ngFor="let task of tasks" class="row list-group-item" @added>
+                <app-tasks-board-task [task]="task" (destroy)="onDelete(task)"></app-tasks-board-task>
+            </div>
+        </div>
+    </div>
+</div>

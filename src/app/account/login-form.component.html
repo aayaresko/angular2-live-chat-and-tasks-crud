@@ -1,0 +1,13 @@
+<form [formGroup]="mainForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" formControlName="email" required>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" formControlName="password" required>
+    </div>
+    <div class="form-group">
+        <input class="btn btn-primary" value="Send" type="submit" [disabled]="!mainForm.valid">
+    </div>
+</form>

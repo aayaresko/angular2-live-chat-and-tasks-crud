@@ -1,0 +1,14 @@
+<form [formGroup]="mainForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input id="title" name="title" placeholder="Title text" class="form-control" formControlName="title" required>
+    </div>
+    <div class="form-group">
+        <label for="title">Content</label>
+        <textarea id="content" name="content" placeholder="Content text" class="form-control" formControlName="content" required></textarea>
+    </div>
+    <div class="form-group">
+        <input class="btn btn-primary" value="Send" type="submit" [disabled]="!mainForm.valid">
+        <a [routerLink]="['/tasks-board']" class="btn btn-default">Cancel</a>
+    </div>
+</form>

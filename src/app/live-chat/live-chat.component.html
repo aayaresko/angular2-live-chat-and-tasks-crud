@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-md-12">
+        <div id="chat-main-window" appWidowResize>
+            <div class="chat-body">
+                <app-live-chat-messages-list></app-live-chat-messages-list>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="row" *ngIf="user && connectionStatus === 'connected'" [@form]>
+    <div class="col-md-12">
+        <app-live-chat-message-form [author]="user" (persist)="onPersistMessage($event)"></app-live-chat-message-form>
+    </div>
+</div>
+<div>
+    <div *ngIf="connectionStatus === 'disconnected'" [@notification]>
+        <div class="alert alert-info">
+            <strong>Connecting...</strong>
+        </div>
+    </div>
+</div>

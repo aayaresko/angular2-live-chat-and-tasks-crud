@@ -1,0 +1,32 @@
+<template [ngIf]="author">
+    <div class="col-md-1">
+        <a href="{{author.getDetailUrl()}}" target="_blank" class="thumbnail">
+            <img src="{{author.getAvatarUrl()}}" alt="{{author.getFullName()}}" class="img-responsive">
+        </a>
+    </div>
+    <div class="col-md-9">
+        <p>
+            <strong>
+                <a href="{{author.getDetailUrl()}}" target="_blank">{{task.title}}</a>
+            </strong>
+        </p>
+        <div>{{task.content}}</div>
+    </div>
+    <div class="col-md-2">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-muted pull-right">Today at {{task.created_at | date:'HH:mm'}}</p>
+            </div>
+        </div>
+        <template [ngIf]="isMessageAuthor" >
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="pull-right">
+                        <a class="btn btn-danger" (click)="onDelete()">Delete</a>
+                        <a class="btn btn-warning" [routerLink]="['edit', task.id]">Edit</a>
+                    </p>
+                </div>
+            </div>
+        </template>
+    </div>
+</template>

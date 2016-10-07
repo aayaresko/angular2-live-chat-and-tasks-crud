@@ -1,0 +1,33 @@
+<template [ngIf]="author">
+    <div [ngSwitch]="message.type">
+        <template [ngSwitchCase]="'system-message'">
+            <div class="col-md-10">
+                <p>
+                    <span class="text-primary">system:</span>
+                    <span class="text-muted">{{author.getFullName()}} {{message.content}}</span>
+                </p>
+            </div>
+            <div class="col-md-2">
+                <p class="text-muted pull-right">Today at {{message.created_at | date:'HH:mm'}}</p>
+            </div>
+        </template>
+        <template ngSwitchDefault>
+            <div class="col-md-1">
+                <a href="{{author.getDetailUrl()}}" target="_blank" class="thumbnail">
+                    <img src="{{author.getAvatarUrl()}}" alt="{{author.getFullName()}}" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-md-9">
+                <p>
+                    <strong>
+                        <a href="{{author.getDetailUrl()}}" target="_blank">{{author.getFullName()}}</a>
+                    </strong>
+                </p>
+                <div>{{message.content}}</div>
+            </div>
+            <div class="col-md-2">
+                <p class="text-muted pull-right">Today at {{message.created_at | date:'HH:mm'}}</p>
+            </div>
+        </template>
+    </div>
+</template>
