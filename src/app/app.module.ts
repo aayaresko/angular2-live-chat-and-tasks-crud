@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { LiveChatModule } from './live-chat/live-chat.module';
 import { TasksBoardModule } from './tasks-board/tasks-board.module';
@@ -21,8 +20,6 @@ import { AppRoutingModule } from './app-routing.module';
 @NgModule({
     imports: [
         BrowserModule,
-        FormsModule,
-        ReactiveFormsModule,
         HttpModule,
         AccountModule,
         LiveChatModule,
