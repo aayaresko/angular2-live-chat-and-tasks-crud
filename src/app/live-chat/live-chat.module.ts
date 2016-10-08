@@ -21,7 +21,10 @@ import { LiveChatRoutingModule } from './live-chat-routing.module';
         MessageFormComponent,
         MessagesListComponent,
         WindowResizeDirective,
-    ]
+    ],
+    exports: [
+        LiveChatComponent
+    ],
 })
 export class LiveChatModule {
 }
