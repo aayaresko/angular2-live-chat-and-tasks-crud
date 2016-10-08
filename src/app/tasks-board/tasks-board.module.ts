@@ -22,9 +22,6 @@ import { TasksRoutingModule } from './tasks-routing.module';
         TaskFormComponent,
         TaskComponent
     ],
-    exports: [
-        TasksBoardComponent
-    ],
     providers: [
         TaskService,
         TaskResolveService,
