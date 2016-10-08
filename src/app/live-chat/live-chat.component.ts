@@ -1,9 +1,9 @@
 import { Component, OnInit, trigger, style, transition, animate, OnDestroy } from '@angular/core';
-import { SocketService } from '../shared/socket.service';
+import { SocketService } from './socket.service';
 import { MessageService } from './message.service';
-import { AuthorizationService } from '../shared/authorization.service';
+import { AuthorizationService } from '../core/authorization.service';
 import { Message } from './message';
-import { User } from '../shared/user';
+import { User } from '../core/user';
 
 @Component({
     selector: 'app-live-chat',

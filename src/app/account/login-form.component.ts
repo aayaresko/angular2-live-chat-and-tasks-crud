@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, Validators, FormControl } from '@angular/forms';
-import { AuthorizationService } from '../shared/authorization.service';
+import { AuthorizationService } from '../core/authorization.service';
 
 @Component({
     selector: 'app-login',
@@ -24,7 +24,9 @@ export class LoginFormComponent implements OnInit {
 
     public onSubmit() {
         if (this.mainForm.valid) {
-            this.authorizationService.getAccessToken(this.mainForm.value).subscribe(() => this.authorizationService.afterLogin());
+            this.authorizationService.getAccessToken(this.mainForm.value).subscribe(() => {
+                this.authorizationService.getUserData().subscribe(() => this.authorizationService.afterLogin());
+            });
         }
     }
 

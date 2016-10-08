@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
 import { TaskService } from './task.service';
-import { User } from '../shared/user';
+import { AuthorizationService } from '../core/authorization.service';
+import { User } from '../core/user';
 import { Task } from './task';
-import { AuthorizationService } from '../shared/authorization.service';
 
 @Component({
     selector: 'app-tasks-board-task-form',

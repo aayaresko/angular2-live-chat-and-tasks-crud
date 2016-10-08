@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { AuthorizationService } from '../core/authorization.service';
+import { User } from '../core/user';
 import { Task } from './task';
-import { User } from '../shared/user';
-import { AuthorizationService } from '../shared/authorization.service';
 
 @Component({
     selector: 'app-tasks-board-task',

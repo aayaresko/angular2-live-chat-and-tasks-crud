@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Message } from './message';
-import { User } from '../shared/user';
+import { User } from '../core/user';
 
 @Component({
     selector: 'app-live-chat-message',

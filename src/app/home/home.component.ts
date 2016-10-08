@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthorizationService } from '../shared/authorization.service';
+import { AuthorizationService } from '../core/authorization.service';
 
 @Component({
     selector: 'app-home',
@@ -10,8 +10,7 @@ export class HomeComponent implements OnInit {
     constructor(private authorizationService: AuthorizationService) {
     }
 
-    ngOnInit() {
-        console.log(this.authorizationService.user);
+    public ngOnInit() {
     }
 
 }

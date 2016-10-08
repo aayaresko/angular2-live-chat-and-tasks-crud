@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SharedModule } from '../shared/shared.module';
 import { LiveChatComponent } from './live-chat.component';
 import { MessageComponent } from './message.component';
 import { MessageFormComponent } from './message-form.component';
@@ -10,9 +9,7 @@ import { LiveChatRoutingModule } from './live-chat-routing.module';
 
 @NgModule({
     imports: [
-        CommonModule,
-        FormsModule,
-        ReactiveFormsModule,
+        SharedModule,
         LiveChatRoutingModule,
     ],
     declarations: [
@@ -24,4 +21,5 @@ import { LiveChatRoutingModule } from './live-chat-routing.module';
     ]
 })
 export class LiveChatModule {
+
 }
