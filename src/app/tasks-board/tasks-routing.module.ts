@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TasksListComponent } from './tasks-list.component';
-import { TaskFormComponent } from './task-form.component';
-import { TaskResolveService } from './task-resolve.service';
+import { TaskResolveService } from './shared/task-resolve.service';
+import { TasksListComponent } from './tasks-list/tasks-list.component';
+import { TaskFormComponent } from './shared/task-form.component';
 import { TasksBoardComponent } from './tasks-board.component';
 
 const routes: Routes = [

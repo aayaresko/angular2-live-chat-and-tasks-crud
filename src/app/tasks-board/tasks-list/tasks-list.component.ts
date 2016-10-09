@@ -1,6 +1,6 @@
 import { Component, OnInit, style, animate, transition, trigger } from '@angular/core';
-import { TaskService } from './task.service';
-import { Task } from './task';
+import { TaskService } from '../shared/task.service';
+import { Task } from '../shared/task';
 
 @Component({
     selector: 'app-tasks-board-tasks-list',

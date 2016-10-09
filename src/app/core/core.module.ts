@@ -1,8 +1,8 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
-import { UserResolveService } from './user-resolve.service';
-import { AuthorizationService } from './authorization.service';
-import { AuthorizationGuard } from './authorization-guard.service';
 import { Cookie } from 'ng2-cookies/ng2-cookies';
+import { AuthorizationGuard } from './authorization-guard.service';
+import { AuthorizationService } from './authorization.service';
+import { UserResolveService } from './user-resolve.service';
 
 @NgModule({
     providers: [

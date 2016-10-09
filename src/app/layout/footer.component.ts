@@ -9,10 +9,10 @@ export class FooterComponent implements OnInit {
     private title = appConfigData.name;
     private today = Date.now();
 
-    constructor() {
+    public constructor() {
     }
 
-    ngOnInit() {
+    public ngOnInit() {
     }
 
 }

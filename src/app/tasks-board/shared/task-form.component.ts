@@ -1,9 +1,9 @@
+import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { Router, ActivatedRoute } from '@angular/router';
 import { TaskService } from './task.service';
-import { AuthorizationService } from '../core/authorization.service';
-import { User } from '../core/user';
+import { AuthorizationService } from '../../core/authorization.service';
+import { User } from '../../core/user';
 import { Task } from './task';
 
 @Component({

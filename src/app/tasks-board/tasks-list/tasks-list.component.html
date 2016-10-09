@@ -1,3 +1,7 @@
+<!--
+  ~ Copyright (c) 2016  Andrey Yaresko.
+  -->
+
 <div class="row">
     <div class="col-md-12">
         <p>
@@ -9,7 +13,7 @@
     <div class="col-md-12">
         <div class="list-group">
             <div *ngFor="let task of tasks" class="row list-group-item" @added>
-                <app-tasks-board-task [task]="task" (destroy)="onDelete(task)"></app-tasks-board-task>
+                <app-tasks-board-task-detail [task]="task" (destroy)="onDelete(task)"></app-tasks-board-task-detail>
             </div>
         </div>
     </div>

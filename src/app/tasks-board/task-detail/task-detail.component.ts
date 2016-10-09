@@ -1,13 +1,13 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { AuthorizationService } from '../core/authorization.service';
-import { User } from '../core/user';
-import { Task } from './task';
+import { AuthorizationService } from '../../core/authorization.service';
+import { User } from '../../core/user';
+import { Task } from '../shared/task';
 
 @Component({
-    selector: 'app-tasks-board-task',
-    templateUrl: './task.component.html'
+    selector: 'app-tasks-board-task-detail',
+    templateUrl: './task-detail.component.html'
 })
-export class TaskComponent implements OnInit {
+export class TaskDetailComponent implements OnInit {
     @Input() public task: Task;
     @Output() public destroy = new EventEmitter();
     private isMessageAuthor = false;

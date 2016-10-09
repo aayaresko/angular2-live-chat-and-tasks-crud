@@ -1,7 +1,7 @@
-import { Resolve, ActivatedRouteSnapshot } from '@angular/router';
+import { ActivatedRouteSnapshot, Resolve } from '@angular/router';
 import { Injectable } from '@angular/core';
-import { Task } from './task';
 import { TaskService } from './task.service';
+import { Task } from './task';
 
 @Injectable()
 export class TaskResolveService implements Resolve<Task> {

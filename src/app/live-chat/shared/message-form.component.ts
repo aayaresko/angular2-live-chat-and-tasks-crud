@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { User } from '../core/user';
 import { Message } from './message';
+import { User } from '../../core/user';
 
 @Component({
     selector: 'app-live-chat-message-form',

@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { SharedModule } from '../shared/shared.module';
-import { TaskService } from './task.service';
-import { TasksBoardComponent } from './tasks-board.component';
-import { TasksListComponent } from './tasks-list.component';
-import { TaskComponent } from './task.component';
-import { TaskFormComponent } from './task-form.component';
-import { TaskResolveService } from './task-resolve.service';
 import { TasksRoutingModule } from './tasks-routing.module';
+import { TaskService } from './shared/task.service';
+import { TaskResolveService } from './shared/task-resolve.service';
+import { TasksBoardComponent } from './tasks-board.component';
+import { TasksListComponent } from './tasks-list/tasks-list.component';
+import { TaskDetailComponent } from './task-detail/task-detail.component';
+import { TaskFormComponent } from './shared/task-form.component';
 
 @NgModule({
     imports: [
@@ -17,7 +17,7 @@ import { TasksRoutingModule } from './tasks-routing.module';
         TasksBoardComponent,
         TasksListComponent,
         TaskFormComponent,
-        TaskComponent
+        TaskDetailComponent
     ],
     providers: [
         TaskService,

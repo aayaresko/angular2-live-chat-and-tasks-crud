@@ -1,6 +1,6 @@
 import { Component, OnInit, style, transition, animate, trigger } from '@angular/core';
-import { Message } from './message';
-import { MessageService } from './message.service';
+import { MessageService } from '../shared/message.service';
+import { Message } from '../shared/message';
 
 @Component({
     selector: 'app-live-chat-messages-list',

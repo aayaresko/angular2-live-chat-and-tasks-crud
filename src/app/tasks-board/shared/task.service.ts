@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Http, Headers, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
-import { AuthorizationService } from '../core/authorization.service';
-import { appConfigData } from '../app-config-data';
+import { AuthorizationService } from '../../core/authorization.service';
 import { Task } from './task';
+import { appConfigData } from '../../app-config-data';
 
 @Injectable()
 export class TaskService {

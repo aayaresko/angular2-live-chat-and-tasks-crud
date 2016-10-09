@@ -1,4 +1,4 @@
-import { Resolve, ActivatedRouteSnapshot } from '@angular/router';
+import { ActivatedRouteSnapshot, Resolve } from '@angular/router';
 import { Injectable } from '@angular/core';
 import { AuthorizationService } from './authorization.service';
 import { User } from './user';

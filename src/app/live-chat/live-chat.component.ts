@@ -1,8 +1,8 @@
 import { Component, OnInit, trigger, style, transition, animate, OnDestroy } from '@angular/core';
-import { SocketService } from './socket.service';
-import { MessageService } from './message.service';
 import { AuthorizationService } from '../core/authorization.service';
-import { Message } from './message';
+import { MessageService } from './shared/message.service';
+import { SocketService } from './socket.service';
+import { Message } from './shared/message';
 import { User } from '../core/user';
 
 @Component({
