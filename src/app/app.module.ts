@@ -8,8 +8,8 @@ import { TasksBoardModule } from './tasks-board/tasks-board.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './layout/header.component';
-import { FooterComponent } from './layout/footer.component';
+import { HeaderComponent } from './core/header.component';
+import { FooterComponent } from './core/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { appConfigData } from './app-config-data';
 import { APP_CONFIG } from './app.config';
@@ -26,10 +26,10 @@ import { APP_CONFIG } from './app.config';
     ],
     declarations: [
         AppComponent,
-        HeaderComponent,
-        FooterComponent,
         HomeComponent,
         PageNotFoundComponent,
+        HeaderComponent,
+        FooterComponent,
     ],
     providers: [
         { provide: APP_CONFIG, useValue: appConfigData }
