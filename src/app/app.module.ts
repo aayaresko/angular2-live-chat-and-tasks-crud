@@ -3,8 +3,6 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { CoreModule } from './core/core.module';
 import { AccountModule } from './account/account.module';
-import { LiveChatModule } from './live-chat/live-chat.module';
-import { TasksBoardModule } from './tasks-board/tasks-board.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -20,8 +18,6 @@ import { APP_CONFIG } from './app.config';
         HttpModule,
         CoreModule,
         AccountModule,
-        LiveChatModule,
-        TasksBoardModule,
         AppRoutingModule
     ],
     declarations: [
